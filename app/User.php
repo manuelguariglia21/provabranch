@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function job_roles() {
+        return $this->belongsToMany('App\Job_role');
+    }
 }
