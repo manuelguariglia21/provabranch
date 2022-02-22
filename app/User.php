@@ -40,4 +40,7 @@ class User extends Authenticatable
     public function job_roles() {
         return $this->belongsToMany('App\Job_role');
     }
+    public function skills() {
+        return $this->belongsToMany('App\Skill');
+    }
 }
