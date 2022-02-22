@@ -43,4 +43,7 @@ class User extends Authenticatable
     public function skills() {
         return $this->belongsToMany('App\Skill');
     }
+    public function levels() {
+        return $this->belongsTo('App\Level');
+    }
 }
